@@ -6,11 +6,40 @@
 using namespace std;
 
 class Student {
-public:
+private:
 	string name;
-	int age;
+	string age;
+	;
+
+public:
+	string getName() {
+		return name;
+	}
+
+	void setName(string name) {
+		this->name = name;
+	}
+
+	int getAge() {
+		return stoi(age);
+	}
+
+	void setAge(string age) {
+		int number = stoi(age);
+		if (number >= 14 && number <= 80) {
+			this->age = age;
+		}
+
+	}
+
+	string getStringAge() {
+		return age;
+	}
+
+
 
 	string getInfo() {
-		return name + ": age = " + to_string(age);
+		return name + ": age = " + getStringAge();
 	}
+
 };
