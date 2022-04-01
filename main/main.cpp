@@ -2,12 +2,14 @@
 
 int main()
 {
-	Student kirill;
+	Student st1;
+	Student st2;
+	Student st3;
 
-	kirill.name = "Kirill";
-	kirill.age = 16;
+	st1.setName("Alex");
+	st1.setAge("16");
 
-	cout << kirill.getInfo();
+	cout << st1.getInfo();
 
 	return 0;
 }
